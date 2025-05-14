@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bénévola - Ensemble pour un monde meilleur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Ajout de model-viewer pour l'affichage 3D - version spécifique et stable -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-hands-helping logo-icon"></i>
+                <span>Bénévola</span>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="#missions">Nos Missions</a></li>
+                    <li><a href="#don">Faire un Don</a></li>
+                    <li><a href="#benevolat">Devenir Bénévole</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bannière principale -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ensemble, construisons un monde meilleur</h1>
+                <p>Bénévola œuvre pour l'éducation, la santé et l'aide d'urgence à travers le monde. Rejoignez-nous dans cette aventure humaine.</p>
+                <div class="hero-buttons">
+                    <a href="#don" class="btn btn-primary donate-btn">Faire un don</a>
+                    <a href="#benevolat" class="btn btn-secondary">Devenir bénévole</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image">
+                    <i class="fas fa-users hero-icon"></i>
+                    <p>Bénévoles en action</p>
+                </div>
+            </div>
+        </div>
+        <div class="wave-separator"></div>
+    </section>
+
+    <!-- Nos causes -->
+    <section id="missions" class="causes">
+        <div class="container">
+            <h2 class="section-title">Nos causes</h2>
+            <p class="section-subtitle">Découvrez les domaines dans lesquels nous intervenons</p>
+            
+            <div class="causes-grid">
+                <div class="cause-card">
+                    <div class="cause-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Éducation</h3>
+                    <p>Nous construisons des écoles et formons des enseignants pour offrir une éducation de qualité aux enfants défavorisés.</p>
+                    <a href="#education" class="btn-text">En savoir plus</a>
+                </div>
+                
+                <div class="cause-card">
+                    <div class="cause-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Santé</h3>
+                    <p>Nous améliorons l'accès aux soins médicaux et aux médicaments essentiels dans les régions isolées.</p>
+                    <a href="#sante" class="btn-text">En savoir plus</a>
+                </div>
+                
+                <div class="cause-card">
+                    <div class="cause-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Aide d'urgence</h3>
+                    <p>Nous intervenons rapidement lors de catastrophes naturelles pour fournir abri, nourriture et soins.</p>
+                    <a href="#urgence" class="btn-text">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="impact">
+        <div class="container">
+            <h2 class="section-title">Notre impact</h2>
+            <p class="section-subtitle">Ensemble, nous faisons la différence</p>
+            
+            <div class="impact-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="120">0</div>
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50000">0</div>
+                    <div class="stat-label">Personnes aidées</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" data-count="35">0</div>
+                    <div class="stat-label">Pays d'intervention</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">Bénévoles actifs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section id="temoignages" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Témoignages</h2>
+            <p class="section-subtitle">Ce que disent nos bénévoles et bénéficiaires</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-container">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image">
+                                <div class="placeholder-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"Devenir bénévole chez Bénévola a changé ma vie. J'ai pu aider à construire une école au Sénégal et voir le sourire des enfants était la plus belle des récompenses."</p>
+                                <div class="testimonial-author">Marie L., bénévole depuis 2020</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image">
+                                <div class="placeholder-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"Grâce à l'intervention de Bénévola après les inondations, notre village a pu se reconstruire. Leur aide a été précieuse dans les moments les plus difficiles."</p>
+                                <div class="testimonial-author">Thomas K., bénéficiaire</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image">
+                                <div class="placeholder-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"En tant que médecin bénévole, j'ai pu apporter des soins essentiels dans des régions où l'accès à la santé est limité. Une expérience humaine extraordinaire."</p>
+                                <div class="testimonial-author">Sophie M., bénévole depuis 2018</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modèle 3D avec model-viewer -->
+    <section id="model-3d" class="model-3d">
+        <div class="container">
+            <h2 class="section-title">Notre boîte de dons en 3D</h2>
+            <p class="section-subtitle">Explorez notre modèle 3D créé avec Blender</p>
+            
+            <div class="model-container">
+                <!-- Modèle 3D simplifié avec fallback -->
+                <model-viewer 
+                    src="models/donation-box-detailed.glb" 
+                    alt="Boîte de dons Bénévola" 
+                    auto-rotate 
+                    camera-controls 
+                    shadow-intensity="1"
+                    exposure="0.7"
+                    poster="models/donation-box-poster.jpg"
+                    loading="eager"
+                    reveal="auto"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look">
+                    <div class="progress-bar" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <div class="model-annotation">Boîte de dons Bénévola</div>
+                    <div class="fallback-message">
+                        <p>Si le modèle 3D ne s'affiche pas, votre navigateur ne supporte peut-être pas cette fonctionnalité.</p>
+                    </div>
+                </model-viewer>
+            </div>
+            
+            <div class="model-info">
+                <p>Cette boîte de dons détaillée a été créée avec Blender, un logiciel de modélisation 3D open source. Elle présente des textures réalistes de bois et de métal, ainsi que notre logo. Elle symbolise notre engagement à la transparence et à la qualité. Chaque don est utilisé de manière optimale pour aider ceux qui en ont le plus besoin.</p>
+                <p class="blender-info">Le fichier source Blender (.blend) est disponible dans le dossier "models" du projet, avec toutes les textures dans le sous-dossier "textures".</p>
+                <a href="#don" class="btn btn-primary">Faire un don maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faire un don -->
+    <section id="don" class="donation-section">
+        <div class="container">
+            <h2 class="section-title">Faire un don</h2>
+            <p class="section-subtitle">Votre générosité permet de changer des vies</p>
+            
+            <div class="donation-options">
+                <div class="donation-card">
+                    <div class="donation-amount">20€</div>
+                    <p>Fournit du matériel scolaire à un enfant pendant un an</p>
+                    <button class="btn btn-primary">Donner 20€</button>
+                </div>
+                
+                <div class="donation-card">
+                    <div class="donation-amount">50€</div>
+                    <p>Finance un kit médical d'urgence pour une famille</p>
+                    <button class="btn btn-primary">Donner 50€</button>
+                </div>
+                
+                <div class="donation-card">
+                    <div class="donation-amount">100€</div>
+                    <p>Permet l'accès à l'eau potable pour un village pendant un mois</p>
+                    <button class="btn btn-primary">Donner 100€</button>
+                </div>
+                
+                <div class="donation-card">
+                    <div class="donation-amount">Autre</div>
+                    <div class="custom-amount">
+                        <input type="number" min="1" placeholder="Montant" class="amount-input">
+                        <span class="currency">€</span>
+                    </div>
+                    <button class="btn btn-primary">Donner</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Devenir bénévole -->
+    <section id="benevolat" class="volunteer-section">
+        <div class="container">
+            <h2 class="section-title">Devenir bénévole</h2>
+            <p class="section-subtitle">Rejoignez notre communauté et faites la différence</p>
+            
+            <div class="volunteer-content">
+                <div class="volunteer-text">
+                    <h3>Comment devenir bénévole ?</h3>
+                    <p>Devenir bénévole chez Bénévola, c'est rejoindre une communauté engagée et passionnée. Nous proposons différentes missions adaptées à vos compétences et disponibilités :</p>
+                    <ul>
+                        <li>Missions sur le terrain (1 à 6 mois)</li>
+                        <li>Bénévolat à distance (traduction, graphisme, développement web...)</li>
+                        <li>Événements ponctuels (collectes, sensibilisation...)</li>
+                        <li>Mécénat de compétences pour les entreprises</li>
+                    </ul>
+                    <p>Remplissez le formulaire ci-dessous et nous vous contacterons pour discuter des opportunités qui vous correspondent.</p>
+                </div>
+                
+                <div class="volunteer-form">
+                    <h3>Formulaire de candidature</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstname">Prénom</label>
+                                <input type="text" id="firstname" name="firstname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Nom</label>
+                                <input type="text" id="lastname" name="lastname" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="skills">Compétences</label>
+                            <textarea id="skills" name="skills" rows="3" placeholder="Décrivez vos compétences et expériences"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="availability">Disponibilité</label>
+                            <select id="availability" name="availability">
+                                <option value="">Sélectionnez</option>
+                                <option value="ponctuel">Événements ponctuels</option>
+                                <option value="regulier">Quelques heures par semaine</option>
+                                <option value="mission">Mission de 1 à 6 mois</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Parlez-nous de vos motivations"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer ma candidature</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Nous sommes à votre écoute</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>123 Rue de la Solidarité<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@benevola.org</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lundi - Vendredi: 9h - 18h<br>Samedi: 10h - 15h</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Nom</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Sujet</label>
+                            <input type="text" id="contact-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appel à l'action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Rejoignez-nous dans cette aventure humaine</h2>
+            <p>Ensemble, nous pouvons faire la différence. Chaque geste compte, chaque action a un impact.</p>
+            <div class="cta-buttons">
+                <a href="#don" class="btn btn-primary">Faire un don</a>
+                <a href="#benevolat" class="btn btn-secondary">Devenir bénévole</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-hands-helping logo-icon"></i>
+                    <p>Bénévola</p>
+                    <p class="tagline">Ensemble pour un monde meilleur</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#missions">Nos Missions</a></li>
+                        <li><a href="#don">Faire un Don</a></li>
+                        <li><a href="#benevolat">Devenir Bénévole</a></li>
+                        <li><a href="#temoignages">Témoignages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Rue de la Solidarité, 75001 Paris</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@benevola.org</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Newsletter</h3>
+                        <form>
+                            <input type="email" placeholder="Votre email" required>
+                            <button type="submit" class="btn btn-primary">S'abonner</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bénévola. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/model-viewer-script.js"></script>
+</body>
+</html>
